@@ -2,37 +2,27 @@ package com.nishchay;
 
 public class Dev {
 
-    private int age;
-    private Laptop laptop;
+    private Computer computer;
 
     public Dev() {
         System.out.println("dev constructor");
     }
 
-    public Dev(int age, Laptop laptop) {
+    public Dev(Computer computer) {
         System.out.println("dev parameterized constructor");
-        this.age = age;
-        this.laptop = laptop;
+        this.computer = computer;
     }
 
     public void build() {
         System.out.println("building a new project");
-        laptop.compile();
+        computer.compile();
     }
 
-    public int getAge() {
-        return age;
+    public Computer getComputer() {
+        return computer;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public Laptop getLaptop() {
-        return laptop;
-    }
-
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setComputer(Computer computer) {
+        this.computer = computer;
     }
 }
